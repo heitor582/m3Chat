@@ -1,5 +1,6 @@
 plugins {
 	id 'java'
+	id 'application'
 	id 'org.springframework.boot' version '3.2.0'
 	id 'io.spring.dependency-management' version '1.1.4'
 }
@@ -16,6 +17,10 @@ repositories {
 
 springBoot {
 	mainClass = "com.startup.m3.M3Application"
+}
+
+application {
+    mainClassName = "com.startup.m3.M3Application"
 }
 
 dependencies {
