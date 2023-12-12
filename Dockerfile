@@ -13,7 +13,7 @@ COPY . .
 RUN ./gradlew clean build -x test
 
 ENV ARTIFACT_NAME=application.jar
-RUN ls -la
+
 EXPOSE 8080
 EXPOSE 10400
-CMD java -jar ./$ARTIFACT_NAME --spring.profiles.active=production -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:10400
+CMD java -jar .build/libs/$ARTIFACT_NAME --spring.profiles.active=production -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:10400
