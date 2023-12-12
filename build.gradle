@@ -18,6 +18,10 @@ springBoot {
 	mainClass = "com.startup.m3.M3Application"
 }
 
+bootJar {
+    mainClassName = 'com.startup.m3.M3Application'
+}
+
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
