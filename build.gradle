@@ -8,6 +8,8 @@ java {
 	sourceCompatibility = '17'
 }
 
+group = 'com.startup.m3'
+
 repositories {
 	mavenCentral()
 }
